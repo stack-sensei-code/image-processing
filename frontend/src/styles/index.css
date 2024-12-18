@@ -1,0 +1,8 @@
+html, body, #root {height: 100%;margin: 0;}
+  
+#root {display: flex;flex-direction: column;align-items: center;justify-content: flex-start;}
+a{text-decoration: none;}
+.btn{padding: .5rem 1rem;border: none;outline: none;border-radius: .2rem;cursor: pointer;color: #fff;}
+.btn-primary{background-color: #0b5ed7;}
+.btn-warning{background-color: #ffca2c;}
+.btn-success{background-color: #23b471;}
