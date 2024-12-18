@@ -11,7 +11,12 @@ const {
 
 const app = express();
 const PORT = 5000;
-app.use(cors());
+const corsOptions = {
+  origin: 'https://img-process-client.vercel.app',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // If you need to allow cookies or auth headers
+};
+app.use(cors(corsOptions));
 const storage = multer.memoryStorage();
 const upload = multer({
   storage
