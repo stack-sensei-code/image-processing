@@ -76,9 +76,9 @@ function createZip(tempFolder, userId) {
   });
 }
 
-app.get("/",(req,res)=>{
-  console.log("Image") ;
-)}
+app.get('/', (req, res) => {
+  res.send('CORS is configured!');
+});
 app.post('/upload', upload.array('images', 10), async (req, res) => {
   try {
     const { files } = req;
