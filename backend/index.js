@@ -76,7 +76,9 @@ function createZip(tempFolder, userId) {
   });
 }
 
-
+app.get("/",(req,res)=>{
+  console.log("Image") ;
+)}
 app.post('/upload', upload.array('images', 10), async (req, res) => {
   try {
     const { files } = req;
